@@ -22,13 +22,13 @@ public class FizzBuzzSolution {
         String numberAsString = number.toString();
 
         // not fizz or buzz or fizz buzz
-        if (result.equals(numberAsString)) {
-            if (isOdd(number)) {
-                return "fake deluxe";
-            } else {
-                return result;
-            }
-        }
+//        if (result.equals(numberAsString)) {
+//            if (isOdd(number)) {
+//                return "fake deluxe";
+//            } else {
+//                return result;
+//            }
+//        }
 
 //        if ((multipleOf3(number) && contains(number, "3"))
 //                && (multipleOf5(number) && contains(number, "5"))) {
