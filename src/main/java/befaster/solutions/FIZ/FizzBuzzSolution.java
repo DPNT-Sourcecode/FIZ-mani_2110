@@ -4,7 +4,7 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         if (multipleOf3and5(number)) {
-            return "fizz buzz";
+            return isDeluxe(number, "fizz buzz");
         }
 
         if (multipleOf3(number)) {
@@ -16,6 +16,10 @@ public class FizzBuzzSolution {
         }
 
         return number.toString();
+    }
+
+    private String isDeluxe(String prefix) {
+        return null;
     }
 
     private boolean multipleOf5(Integer number) {
