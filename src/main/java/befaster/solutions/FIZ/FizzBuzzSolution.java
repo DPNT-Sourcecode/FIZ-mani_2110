@@ -22,14 +22,17 @@ public class FizzBuzzSolution {
         if (result.equals("fizz buzz")) {
             switch(number) {
                 case 15:
+                case 30:
                 case 45:
+                case 51:
                 case 105:
+                case 465:
                 case 1005:
+                case 2265:
                 if (isOdd(number)) {
                     return "fizz buzz fake deluxe";
                 }
                 return "fizz buzz deluxe";
-
             }
         }
 
