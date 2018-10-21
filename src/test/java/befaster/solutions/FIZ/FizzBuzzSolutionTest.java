@@ -29,6 +29,7 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(1111), equalTo("fake deluxe")); // 1111
         assertThat(fizzBuzz.fizzBuzz(129), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(13), equalTo("fizz"));
+        assertThat(fizzBuzz.fizzBuzz(13), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(1400), equalTo("buzz"));
         assertThat(fizzBuzz.fizzBuzz(15), equalTo("fizz buzz"));
         assertThat(fizzBuzz.fizzBuzz(151), equalTo("buzz"));
@@ -43,12 +44,13 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(27), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(3), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(30), equalTo("fizz buzz"));
-        assertThat(fizzBuzz.fizzBuzz(30), equalTo("fizz buzz"));
         assertThat(fizzBuzz.fizzBuzz(31), equalTo("fizz")); // 31
         assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz fake deluxe")); // fizz
+        assertThat(fizzBuzz.fizzBuzz(333), equalTo("fizz fake deluxe"));
         assertThat(fizzBuzz.fizzBuzz(3636), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(369), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(43), equalTo("fizz"));
+        assertThat(fizzBuzz.fizzBuzz(444), equalTo("fizz deluxe"));
         assertThat(fizzBuzz.fizzBuzz(4444), equalTo("deluxe")); // 4444
         assertThat(fizzBuzz.fizzBuzz(45), equalTo("fizz buzz"));
         assertThat(fizzBuzz.fizzBuzz(465), equalTo("fizz buzz"));
@@ -66,10 +68,10 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(600), equalTo("fizz buzz"));
         assertThat(fizzBuzz.fizzBuzz(653), equalTo("fizz buzz"));
         assertThat(fizzBuzz.fizzBuzz(777), equalTo("fizz fake deluxe")); // fizz
+        assertThat(fizzBuzz.fizzBuzz(7777), equalTo("fake deluxe"));
         assertThat(fizzBuzz.fizzBuzz(811), equalTo("811"));
         assertThat(fizzBuzz.fizzBuzz(9), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(99), equalTo("fizz fake deluxe")); // fizz
-        assertThat(fizzBuzz.fizzBuzz(997), equalTo("997"));
         assertThat(fizzBuzz.fizzBuzz(997), equalTo("997"));
     }
 }
