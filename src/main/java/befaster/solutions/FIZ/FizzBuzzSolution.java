@@ -21,6 +21,7 @@ public class FizzBuzzSolution {
     private String isDeluxe(Integer number, String result) {
         String numberAsString = number.toString();
 
+        // not fizz or buzz or fizz buzz
         if (result.equals(numberAsString)) {
             if (isOdd(number)) {
                 return "fake deluxe";
@@ -29,19 +30,21 @@ public class FizzBuzzSolution {
             }
         }
 
-        if (multipleOf3(number) && contains(number,"3")) {
-            return "fizz deluxe";
-        }
-
         if (multipleOf5(number) && contains(number,"5")) {
+            if (isOdd(number)) {
+                return "buzz fake deluxe";
+            }
             return "buzz deluxe";
         }
 
-        if (isOdd(number)) {
-            return result + " fake deluxe";
-        } else {
-            return result + " deluxe";
+        if (multipleOf3(number) && contains(number,"3")) {
+            if (isOdd(number)) {
+                return "fizz fake deluxe";
+            }
+            return "fizz deluxe";
         }
+
+        return result;
     }
 
     private boolean isOdd(Integer number) {
