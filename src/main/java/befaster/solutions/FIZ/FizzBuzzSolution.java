@@ -20,15 +20,6 @@ public class FizzBuzzSolution {
 
     private String isDeluxe(Integer number, String result) {
         String numberAsString = number.toString();
-        char[] charArray = numberAsString.toCharArray();
-        for (int index = 1; index < charArray.length; index++) {
-            char prevDigit = charArray[index - 1];
-            char thisDigit = charArray[index];
-
-            if (prevDigit != thisDigit) {
-                return result;
-            }
-        }
 
         if (result.equals(numberAsString)) {
             if (isOdd(number)) {
@@ -36,6 +27,14 @@ public class FizzBuzzSolution {
             } else {
                 return result;
             }
+        }
+
+        if (multipleOf3(number) && contains(number,"3")) {
+            return "fizz deluxe";
+        }
+
+        if (multipleOf5(number) && contains(number,"5")) {
+            return "buzz deluxe";
         }
 
         if (isOdd(number)) {
