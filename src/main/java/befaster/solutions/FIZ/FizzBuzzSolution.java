@@ -32,12 +32,24 @@ public class FizzBuzzSolution {
             }
 
             if (result.equals(numberAsString)) {
-                return "deluxe";
+                if (isOdd(number)) {
+                    return "fake deluxe";
+                } else {
+                    return "deluxe";
+                }
             }
 
-            return result + " deluxe";
+            if (isOdd(number)) {
+                return result + " fake deluxe";
+            } else {
+                return result + " deluxe";
+            }
         }
         return result;
+    }
+
+    private boolean isOdd(Integer number) {
+        return (number % 2) != 0;
     }
 
     private boolean multipleOf5(Integer number) {
