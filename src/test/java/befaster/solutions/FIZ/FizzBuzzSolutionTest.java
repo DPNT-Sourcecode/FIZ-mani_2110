@@ -43,18 +43,18 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(2265), equalTo("fizz buzz fake deluxe")); // fizz buzz
         assertThat(fizzBuzz.fizzBuzz(27), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(3), equalTo("fizz fake deluxe")); // fizz
-        assertThat(fizzBuzz.fizzBuzz(30), equalTo("fizz buzz"));
+        assertThat(fizzBuzz.fizzBuzz(30), equalTo("fizz buzz deluxe")); // fizz buzz
         assertThat(fizzBuzz.fizzBuzz(31), equalTo("fizz")); // 31
         assertThat(fizzBuzz.fizzBuzz(33), equalTo("fizz fake deluxe")); // fizz
         assertThat(fizzBuzz.fizzBuzz(333), equalTo("fizz fake deluxe"));
-        assertThat(fizzBuzz.fizzBuzz(3636), equalTo("fizz"));
-        assertThat(fizzBuzz.fizzBuzz(369), equalTo("fizz"));
+        assertThat(fizzBuzz.fizzBuzz(3636), equalTo("fizz deluxe")); // fizz
+        assertThat(fizzBuzz.fizzBuzz(369), equalTo("fizz fake deluxe")); // fizz
         assertThat(fizzBuzz.fizzBuzz(43), equalTo("fizz"));
-        assertThat(fizzBuzz.fizzBuzz(444), equalTo("fizz deluxe"));
-        assertThat(fizzBuzz.fizzBuzz(4444), equalTo("deluxe")); // 4444
-        assertThat(fizzBuzz.fizzBuzz(45), equalTo("fizz buzz"));
-        assertThat(fizzBuzz.fizzBuzz(465), equalTo("fizz buzz"));
-        assertThat(fizzBuzz.fizzBuzz(5), equalTo("buzz"));
+        assertThat(fizzBuzz.fizzBuzz(444), equalTo("fizz")); // fizz deluxe
+        assertThat(fizzBuzz.fizzBuzz(4444), equalTo("4444")); // deluxe
+        assertThat(fizzBuzz.fizzBuzz(45), equalTo("fizz buzz fake deluxe")); // fizz buzz  
+        assertThat(fizzBuzz.fizzBuzz(465), equalTo("fizz buzz fake deluxe")); // fizz buzz
+        assertThat(fizzBuzz.fizzBuzz(5), equalTo("buzz fake deluxe")); // buzz
         assertThat(fizzBuzz.fizzBuzz(500), equalTo("buzz"));
         assertThat(fizzBuzz.fizzBuzz(51), equalTo("fizz buzz")); //fizz
         assertThat(fizzBuzz.fizzBuzz(52), equalTo("buzz")); // 52
