@@ -1,11 +1,9 @@
-package befaster.solutions.SUM;
+package befaster.solutions.CHK;
 
 import befaster.runner.SolutionNotImplementedException;
 
-public class SumSolution {
-
-    public int compute(int x, int y) {
+public class CheckoutSolution {
+    public Integer checkout(String skus) {
         throw new SolutionNotImplementedException();
     }
-
 }
