@@ -19,31 +19,29 @@ public class FizzBuzzSolution {
     }
 
     private String isDeluxe(Integer number, String result) {
-        if (number > 10) {
-            String numberAsString = number.toString();
-            char[] charArray = numberAsString.toCharArray();
-            for (int index = 1; index < charArray.length; index++) {
-                char prevDigit = charArray[index - 1];
-                char thisDigit = charArray[index];
+        String numberAsString = number.toString();
+        char[] charArray = numberAsString.toCharArray();
+        for (int index = 1; index < charArray.length; index++) {
+            char prevDigit = charArray[index - 1];
+            char thisDigit = charArray[index];
 
-                if (prevDigit != thisDigit) {
-                    return result;
-                }
+            if (prevDigit != thisDigit) {
+                return result;
             }
+        }
 
-            if (result.equals(numberAsString)) {
-                if (isOdd(number)) {
-                    return "fake deluxe";
-                } else {
-                    return "deluxe";
-                }
-            }
-
+        if (result.equals(numberAsString)) {
             if (isOdd(number)) {
-                return result + " fake deluxe";
+                return "fake deluxe";
             } else {
-                return result + " deluxe";
+                return "deluxe";
             }
+        }
+
+        if (isOdd(number)) {
+            return result + " fake deluxe";
+        } else {
+            return result + " deluxe";
         }
         return result;
     }
