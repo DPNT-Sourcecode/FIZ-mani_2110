@@ -7,11 +7,11 @@ public class FizzBuzzSolution {
             return isDeluxe(number, "fizz buzz");
         }
 
-        if (multipleOf3(number) || contains(number,"3")) {
+        if (multipleOf3(number) || contains(number, "3")) {
             return isDeluxe(number, "fizz");
         }
 
-        if (multipleOf5(number)|| contains(number,"5")) {
+        if (multipleOf5(number) || contains(number, "5")) {
             return isDeluxe(number, "buzz");
         }
 
@@ -30,14 +30,23 @@ public class FizzBuzzSolution {
             }
         }
 
-        if (multipleOf5(number) && contains(number,"5")) {
+//        if ((multipleOf3(number) && contains(number, "3"))
+//                && (multipleOf5(number) && contains(number, "5"))) {
+        if (result.equals("fizz buzz")) {
+            if (isOdd(number)) {
+                return "fizz buzz fake deluxe";
+            }
+            return "fizz buzz deluxe";
+        }
+
+        if (multipleOf5(number) && contains(number, "5")) {
             if (isOdd(number)) {
                 return "buzz fake deluxe";
             }
             return "buzz deluxe";
         }
 
-        if (multipleOf3(number) && contains(number,"3")) {
+        if (multipleOf3(number) && contains(number, "3")) {
             if (isOdd(number)) {
                 return "fizz fake deluxe";
             }
@@ -65,7 +74,7 @@ public class FizzBuzzSolution {
 
     private boolean multipleOf3and5(Integer number) {
         return (multipleOf3(number) || contains(number, "3"))
-                && (multipleOf5(number)|| contains(number, "5"));
+                && (multipleOf5(number) || contains(number, "5"));
     }
 
 }
