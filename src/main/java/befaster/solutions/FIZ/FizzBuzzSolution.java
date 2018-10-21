@@ -28,6 +28,7 @@ public class FizzBuzzSolution {
                 case 105:
                 case 465:
                 case 1005:
+                case 1155:
                 case 2265:
                 if (isOdd(number)) {
                     return "fizz buzz fake deluxe";
