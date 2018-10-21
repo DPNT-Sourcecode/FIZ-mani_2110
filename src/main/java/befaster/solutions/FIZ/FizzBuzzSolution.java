@@ -7,11 +7,11 @@ public class FizzBuzzSolution {
             return isDeluxe(number, "fizz buzz");
         }
 
-        if (multipleOf3(number)) {
+        if (multipleOf3(number) || contains(number,"3")) {
             return isDeluxe(number, "fizz");
         }
 
-        if (multipleOf5(number)) {
+        if (multipleOf5(number)|| contains(number,"5")) {
             return isDeluxe(number, "buzz");
         }
 
@@ -34,7 +34,7 @@ public class FizzBuzzSolution {
             if (isOdd(number)) {
                 return "fake deluxe";
             } else {
-                return "deluxe";
+                return result;
             }
         }
 
@@ -43,7 +43,6 @@ public class FizzBuzzSolution {
         } else {
             return result + " deluxe";
         }
-        return result;
     }
 
     private boolean isOdd(Integer number) {
@@ -51,15 +50,20 @@ public class FizzBuzzSolution {
     }
 
     private boolean multipleOf5(Integer number) {
-        return number % 5 == 0 || number.toString().contains("5");
+        return number % 5 == 0;
     }
 
     private boolean multipleOf3(Integer number) {
-        return (number % 3 == 0) || number.toString().contains("3");
+        return (number % 3 == 0);
+    }
+
+    private boolean contains(Integer number, String digit) {
+        return number.toString().contains(digit);
     }
 
     private boolean multipleOf3and5(Integer number) {
-        return multipleOf3(number) && multipleOf5(number);
+        return (multipleOf3(number) || contains(number, "3"))
+                && (multipleOf5(number)|| contains(number, "5"));
     }
 
 }
