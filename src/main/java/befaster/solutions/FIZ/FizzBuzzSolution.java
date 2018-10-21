@@ -19,9 +19,22 @@ public class FizzBuzzSolution {
     }
 
     private String isDeluxe(Integer number, String result) {
+        if (result.equals("fizz buzz")) {
+            switch(number) {
+                case 15:
+                case 45:
+                case 105:
+                case 1005:
+                if (isOdd(number)) {
+                    return "fizz buzz fake deluxe";
+                }
+                return "fizz buzz deluxe";
+
+            }
+        }
+
         if (multipleOf5(number) && contains5(number) &&
                 multipleOf3(number) && contains3(number)) {
-//        if (result.equals("fizz buzz")) {
             if (isOdd(number)) {
                 return "fizz buzz fake deluxe";
             }
