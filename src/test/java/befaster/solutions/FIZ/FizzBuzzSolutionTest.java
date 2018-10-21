@@ -86,7 +86,7 @@ public class FizzBuzzSolutionTest {
 
     @Test
     public void compute_fizz_buzz_fake_deluxe() {
-        assertThat(fizzBuzz.fizzBuzz(1005), equalTo("buzz fake deluxe")); // fizz buzz
+        assertThat(fizzBuzz.fizzBuzz(1005), equalTo("fizz buzz fake deluxe")); // fizz buzz
         assertThat(fizzBuzz.fizzBuzz(105), equalTo("fizz buzz fake deluxe")); // fizz buzz
         assertThat(fizzBuzz.fizzBuzz(15), equalTo("fizz buzz fake deluxe")); // fizz buzz
         assertThat(fizzBuzz.fizzBuzz(2265), equalTo("fizz buzz fake deluxe")); // fizz buzz
