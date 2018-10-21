@@ -18,8 +18,26 @@ public class FizzBuzzSolution {
         return number.toString();
     }
 
-    private String isDeluxe(String prefix) {
-        return null;
+    private String isDeluxe(Integer number, String result) {
+        if (number > 10) {
+            String numberAsString = number.toString();
+            char[] charArray = numberAsString.toCharArray();
+            for (int index = 1; index < charArray.length; index++) {
+                char prevDigit = charArray[index - 1];
+                char thisDigit = charArray[index];
+
+                if (prevDigit != thisDigit) {
+                    return result;
+                }
+            }
+
+            if (result.equals(numberAsString)) {
+                return "deluxe";
+            }
+
+            return result + " deluxe";
+        }
+        return result;
     }
 
     private boolean multipleOf5(Integer number) {
