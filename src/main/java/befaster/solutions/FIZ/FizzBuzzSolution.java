@@ -15,7 +15,7 @@ public class FizzBuzzSolution {
             return isDeluxe(number, "buzz");
         }
 
-        return isDeluxe(number, number.toString());
+        return number.toString();
     }
 
     private String isDeluxe(Integer number, String result) {
