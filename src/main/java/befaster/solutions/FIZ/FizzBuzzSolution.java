@@ -8,14 +8,14 @@ public class FizzBuzzSolution {
         }
 
         if (multipleOf3(number)) {
-            return "fizz";
+            return isDeluxe(number, "fizz");
         }
 
         if (multipleOf5(number)) {
-            return "buzz";
+            return isDeluxe(number, "buzz");
         }
 
-        return number.toString();
+        return isDeluxe(number, number.toString());
     }
 
     private String isDeluxe(Integer number, String result) {
