@@ -21,13 +21,13 @@ public class FizzBuzzSolutionTest {
         assertThat(fizzBuzz.fizzBuzz(1), equalTo("1"));
         assertThat(fizzBuzz.fizzBuzz(2), equalTo("2"));
         assertThat(fizzBuzz.fizzBuzz(11), equalTo("11"));
-        assertThat(fizzBuzz.fizzBuzz(31), equalTo("31"));
-        assertThat(fizzBuzz.fizzBuzz(52), equalTo("52"));
+        assertThat(fizzBuzz.fizzBuzz(31), equalTo("fizz")); // 31
+        assertThat(fizzBuzz.fizzBuzz(52), equalTo("buzz")); // 52
         assertThat(fizzBuzz.fizzBuzz(811), equalTo("811"));
         assertThat(fizzBuzz.fizzBuzz(997), equalTo("997"));
         assertThat(fizzBuzz.fizzBuzz(3), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(9), equalTo("fizz"));
-        assertThat(fizzBuzz.fizzBuzz(51), equalTo("fizz"));
+        assertThat(fizzBuzz.fizzBuzz(51), equalTo("fizz buzz")); //fizz
         assertThat(fizzBuzz.fizzBuzz(111), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(369), equalTo("fizz"));
         assertThat(fizzBuzz.fizzBuzz(3636), equalTo("fizz"));

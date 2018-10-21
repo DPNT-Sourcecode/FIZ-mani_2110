@@ -19,11 +19,11 @@ public class FizzBuzzSolution {
     }
 
     private boolean multipleOf5(Integer number) {
-        return number % 5 == 0;
+        return number % 5 == 0 || number.toString().contains("5");
     }
 
     private boolean multipleOf3(Integer number) {
-        return number % 3 == 0;
+        return (number % 3 == 0) || number.toString().contains("3");
     }
 
     private boolean multipleOf3and5(Integer number) {
