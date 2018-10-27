@@ -1,13 +1,13 @@
-# tdl-warmup-nodejs
+# tdl-warmup-python
 
 
 ## 1. Requirements
 
-- `Node 5.6.0`
-- `NPM 3.6.0`
+- `Python 2.7`
+- `pip`
 
 ## 2. How to start
 
-- Install dependencies `npm install`
-- Open `lib/send_command_to_server.js`
+- Install dependencies `pip install -r requirements.txt`
+- Open `lib/send_command_to_server.py`
 - Read the comments as documentation, they will guide through the rest of the setup
